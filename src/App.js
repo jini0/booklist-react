@@ -1,24 +1,16 @@
-import logo from './logo.svg';
+// 내가 한거....
 import './App.css';
+import BookHead from './components/BookHead';
+import BookList from './components/BookList';
+import BookTemplate from './components/BookTemplate';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <BookTemplate>
+        <BookHead>
+          <BookList/>
+        </BookHead>
+      </BookTemplate>
   );
 }
 
